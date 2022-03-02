@@ -22,14 +22,19 @@ figure {
   padding-block-end: 3rem;
 }
 
-data::first-letter {
-  font-size: 1.618em;
+data {
+  font-weight: 600;
 }
 
-@media (min-width: 50em) {
-  data {
-    letter-spacing: 0.618em;
-  }
+data del {
+  text-decoration: wavy line-through;
+  font-weight: 300;
+}
+
+data strong {
+  font-size: 1.618em;
+  font-weight: 900;
+  vertical-align: sub;
 }
 
 blockquote {
@@ -37,7 +42,6 @@ blockquote {
   display: flex;
   flex-flow: column;
   font-size: 2em;
-  font-weight: bold;
   justify-content: center;
   margin-block-start: 33vh;
   margin-block-end: 33vh;
